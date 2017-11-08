@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>work5网易幻灯片</title>
+		<style type="text/css">
+			*{
+				margin:0;
+				padding:0;
+				list-style:none;
+			}
+			#wrap{
+				width: 590px;
+				height:340px;
+				position:relative;
+				margin:100px auto;
+				border:#000 solid 1px;
+				overflow:hidden;
+			}
+			#box{
+				height:340px;
+				position:absolute;
+				left:0;
+				top:0;
+			}
+			#box li{
+				width:590px;
+				height:340px;
+				float:left;
+			}
+			#btn{
+				width:580px;
+				position:absolute;
+				left:50%;   
+				margin-left:-290px;
+				bottom:0;
+				height:20px;
+			}
+			#btn li{
+				width:100px;
+				height:10px;
+				background:#c00;
+				float:left;
+				margin-left:15px;
+				position:relative;
+			}
+			#btn li span{
+				width:0;
+				height:10px;
+				position: absolute;
+				left:0;
+				top:0;
+				background:#ececec;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="wrap">
+			<ul id="box">
+				<li><img src="cat/s1.jpg" alt="" /></li>
+				<li><img src="cat/s2.jpg" alt="" /></li>
+				<li><img src="cat/s3.jpg" alt="" /></li>
+				<li><img src="cat/s4.jpg" alt="" /></li>
+				<li><img src="cat/s5.jpg" alt="" /></li>
+			</ul>
+			<ol id="btn">
+				<li><span></span></li>
+				<li><span></span></li>
+				<li><span></span></li>
+				<li><span></span></li>
+				<li><span></span></li>
+			</ol>
+		</div>
+	</body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>work13新的运动形式</title>
+		<style type="text/css">
+			#box{
+				width:100px;
+				height: 100px;
+				background: deepskyblue;
+				position: absolute;
+				left: 0;
+				top: 0;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="box"></div>
+	</body>
+	<script src="js/move.js" type="text/javascript" charset="utf-8"></script>
+	<script type="text/javascript">
+		window.onload=function(){
+			var obox=document.getElementById("box");
+			var b=Tween.Back.easeIn;
+			//var b=Tween.Bounce.easeOut;
+			//var b=Tween.Circ.easeInOut;
+			//var b=Tween.Elastic.easeIn;
+			//var b=Tween.Expo.easeOut;
+			//var b=Tween.Quad.easeIn;
+			//var b=Tween.Quart.easeOut;
+			//var b=Tween.Quint.easeIn;
+			//var b=Tween.Sine.easeInOut;
+			var b=Tween.Back.prototype;
+			
+			
+			
+			obox.onclick=function(){
+				move(this,{left:700},{easeing:b})
+			}
+		}
+	</script>
+</html>
